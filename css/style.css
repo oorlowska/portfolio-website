@@ -140,11 +140,6 @@ nav .nav-link {
   margin-top: 2px;
 }
 
-#navbar-links a:hover:after {
-  width: 100%;
-  left: 0;
-}
-
 /* header */
 
 #header {
@@ -566,6 +561,19 @@ nav .nav-link {
 @media (min-width: 998px) {
   h2 {
     font-size: 30px;
+  }
+
+  #navbar-links a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  #work li {
+    font-size: 16px;
+  }
+
+  .icon i {
+    font-size: 36px;
   }
 
   .image-background {
