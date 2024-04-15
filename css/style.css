@@ -69,6 +69,10 @@ img {
   min-height: 100vh;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 h1,
 h2,
 h3 {
@@ -95,8 +99,7 @@ h3 {
 }
 
 .lead {
-  opacity: 0.8;
-  padding: 1rem 0;
+  opacity: 0.85;
   font-size: 1.7rem;
   font-weight: 300;
   line-height: 1.8;
@@ -210,8 +213,8 @@ nav .nav-link {
   height: auto;
 }
 
-.aboutme .lead {
-  font-weight: 600;
+.aboutme .image-background {
+  visibility: hidden;
 }
 
 /* work */
@@ -252,20 +255,24 @@ nav .nav-link {
   background: var(--light-color);
 }
 
-#work h3 {
-  font-size: 18px;
+.work-content i {
+  margin-right: 5px;
+}
+
+.work-content .lead {
+  font-size: 14px;
 }
 
 .work-bottom {
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
 .work-bottom i {
-  font-size: 40px;
-  padding: 25px 0;
-  transition: 0.85s;
+  font-size: 30px;
+  padding: 20px 0;
   cursor: pointer;
+  transition: 1.2s;
 }
 
 .work-bottom i:hover {
@@ -341,41 +348,12 @@ nav .nav-link {
 }
 
 .contact-left {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .contact-left i {
   font-size: 1.7rem;
-  padding-right: 0.8rem;
-}
-
-.contact-left form .form-control {
-  display: block;
-  margin: 1.6rem 0;
-  border: 1.55px solid rgba(0, 0, 0, 0.25);
-  padding: 1rem;
-  width: 100%;
-}
-
-.contact-left form .form-control::placeholder {
-  font-size: 14px;
-  opacity: 0.75;
-}
-
-.contact-left .btn-submit {
-  padding: 1.2rem 2.5rem;
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  margin-top: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  transition: 0.6s;
-}
-
-.contact-left .btn-submit:hover {
-  opacity: 0.85;
-  scale: 1.05;
+  margin-right: 5px;
 }
 
 /* footer */
@@ -398,8 +376,9 @@ nav .nav-link {
 }
 
 .footer-content p {
+  padding: 1rem 0;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer-content i {
@@ -456,25 +435,28 @@ nav .nav-link {
 
 /* Media Queries */
 
-@media (min-width: 450px) {
+@media (min-width: 360px) {
   .fa-bars {
     color: var(--light-color);
     font-size: 20px;
   }
 
+  .image-background {
+    position: absolute;
+    background-color: #5c5757bb;
+    top: 2em;
+    width: 70%;
+    height: 85%;
+  }
+
   .about-right h2 {
     padding-top: 2rem;
-    font-size: 20px;
   }
 
   .about-right p {
     font-size: 16px;
   }
 
-  .image-background {
-    visibility: hidden;
-  }
-  
   #work {
     height: 100%;
   }
@@ -483,35 +465,10 @@ nav .nav-link {
     padding: 3rem 0;
   }
 
-  .work-content h2 {
-    font-size: 20px;
-  }
-  
-  .work-content .lead {
-    font-size: 16px;
-  }
-
   .work-bottom {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
     row-gap: 0;
-  }
-
-  #work .work-bottom i {
-    font-size: 32px;
-  }
-
-  #work .work-bottom h3 {
-    font-size: 15px;
-  }
-  
-  #portfolio h2 {
-    font-size: 20px;
-  }
-
-  #contact h2 {
-    font-size: 20px;
-    
   }
 }
 
@@ -521,13 +478,10 @@ nav .nav-link {
     object-fit: contain;
   }
 
-  .fa-bars {
-    color: var(--light-color);
-    font-size: 20px;
-  }
-
-  .title h2 {
-    font-size: 4rem;
+  .image-background {
+    top: 1.8em;
+    width: 58%;
+    height: 86%;
   }
 
   .work-bottom {
@@ -548,21 +502,12 @@ nav .nav-link {
     object-fit: cover;
   }
 
-  .contact-left form .form-control {
-    max-width: 500px;
-  }
-
   .footer-content ul {
     flex-direction: row;
   }
 }
 
 @media (min-width: 768px) {
-  .fa-bars {
-    color: var(--light-color);
-    font-size: 20px;
-  }
-
   .header-content h1 {
     font-size: 7rem;
   }
@@ -579,16 +524,54 @@ nav .nav-link {
     object-fit: contain;
   }
 
+  .image-background {
+    top: 25rem;
+    width: 90%;
+    height: 40%;
+  }
+
   .contact-content {
     flex-direction: row;
   }
 
   .contact-left {
-    width: 75%;
+    width: 80%;
+  }
+}
+
+@media (min-width: 785px) {
+  .image-background {
+    top: 25rem;
+    width: 90%;
+    height: 40%;
+  }
+}
+
+@media (min-width: 855px) {
+  .image-background {
+    top: 20rem;
+    width: 90%;
+    height: 48%;
+  }
+}
+
+@media (min-width: 908px) {
+  .image-background {
+    top: 18rem;
+    width: 90%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 998px) {
+  h2 {
+    font-size: 30px;
   }
 
-  .contact-left form {
-    width: 70%;
+  .image-background {
+    top: 12rem;
+    width: 90%;
+    height: 66%;
   }
 }
 
@@ -600,7 +583,9 @@ nav .nav-link {
   }
 
   .image-background {
-    visibility: inherit;
+    top: 2em;
+    width: 90%;
+    height: 82%;
   }
 
   .portfolio-grid {
