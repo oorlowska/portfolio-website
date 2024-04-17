@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sylwia Sasiak Photography</title>
+    <link rel="icon" type="image/favicon" href="/img/favicon.png">
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -38,7 +39,7 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style="border: none;"
+          style="border: none"
         >
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -186,14 +187,57 @@
               <h2>Moje prace</h2>
             </div>
 
-            <div class="portfolio-grid grid">
-              <div><img src="./img/portrait_640.jpg" /></div>
-              <div><img src="./img/event_640.jpg" /></div>
-              <div><img src="./img/bride_640.jpg" /></div>
-              <div><img src="./img/bride-2_640.jpg" /></div>
-              <div><img src="./img/couple_640.jpg" /></div>
-              <div><img src="./img/baby_640.jpg" /></div>
-              <div><img src="./img/dog_640.jpg" /></div>
+            <div id="myModal" class="portfolio-grid grid">
+              <div>
+                <img
+                  src="./img/portrait_640.jpg"
+                  class="gallery-image"
+                  alt="Portret kobiety"
+                  onclick="openModal('./img/portrait_640.jpg')"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/event_640.jpg"
+                  class="gallery-image"
+                  alt="Fotografia eventowa - koncert"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/bride_640.jpg"
+                  class="gallery-image"
+                  alt="Sesja ślubna"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/bride-2_640.jpg"
+                  class="gallery-image"
+                  alt="Fotografia okolicznościowa - ślub"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/couple_640.jpg"
+                  class="gallery-image"
+                  alt="Sesja narzeczeńska"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/baby_640.jpg"
+                  class="gallery-image"
+                  alt="Sesja noworodkowa"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/dog_640.jpg"
+                  class="gallery-image"
+                  alt="Portret psa"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -249,10 +293,18 @@
               Serdecznie zapraszam do zapoznania się z moim porfolio.
             </p>
             <div class="footer-socials">
-              <a href="https://www.facebook.com/profile.php?id=61558326652059" target="_blank" class="footer-link">
+              <a
+                href="https://www.facebook.com/profile.php?id=61558326652059"
+                target="_blank"
+                class="footer-link"
+              >
                 <i class="fa-brands fa-square-facebook"></i>
               </a>
-              <a href="https://www.instagram.com/suiava_/" target="_blank" class="footer-link">
+              <a
+                href="https://www.instagram.com/suiava_/"
+                target="_blank"
+                class="footer-link"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
               <a href="#" class="footer-link">
