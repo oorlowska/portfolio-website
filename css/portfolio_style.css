@@ -112,9 +112,13 @@ h3 {
 }
 
 /* portfolio */
-
 #main-portfolio {
   height: 100%;
+}
+
+.main-portfolio-intro p {
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .main-portfolio-grid {
@@ -122,7 +126,7 @@ h3 {
   --webkit-column-count: 4;
   --moz-column-count: 4;
   gap: 1rem;
-  padding: 4rem;
+  padding-top: 4rem;
 }
 
 .image img {
