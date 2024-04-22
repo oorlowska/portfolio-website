@@ -111,17 +111,25 @@ h3 {
   margin-top: 1.5rem;
 }
 
-/* portfolio */
-#main-portfolio {
+/* photoshoot */
+
+#photoshoot {
   height: 100%;
 }
 
-.main-portfolio-intro p {
+.photoshoot-intro p {
   font-weight: 300;
   line-height: 1.75;
 }
 
-.main-portfolio-grid {
+.photoshoot-intro img {
+  width: 100%;
+  padding-bottom: 4rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.photoshoot-grid {
   column-count: 4;
   --webkit-column-count: 4;
   --moz-column-count: 4;
@@ -134,13 +142,13 @@ h3 {
   width: 100%;
 }
 
-.main-portfolio-grid > div {
-  transition: var(--transition);
-}
+/* .photoshoot-grid > div {
+    transition: var(--transition);
+  } */
 
-.main-portfolio-grid > div:hover {
-  transform: scale(0.95);
-}
+/* .photoshoot-grid > div:hover {
+    transform: scale(0.95);
+  } */
 
 .cta {
   position: relative;
@@ -255,16 +263,16 @@ h3 {
 /* Media Queries */
 
 @media (min-width: 576px) {
-  .main-portfolio-grid {
+  .photoshoot-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .main-portfolio-grid > div {
+  .photoshoot-grid > div {
     height: 300px;
     overflow: hidden;
   }
 
-  .main-portfolio-grid > div img {
+  .photoshoot-grid > div img {
     height: 100%;
     object-fit: cover;
   }
@@ -283,15 +291,15 @@ h3 {
 }
 
 @media (min-width: 1200px) {
-  .main-portfolio-grid {
+  .photoshoot-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .main-portfolio-grid > div:nth-child(2) {
+  .photoshoot-grid > div:nth-child(2) {
     grid-column: 2 / 4;
   }
 
-  .main-portfolio-grid > div:nth-child(6) {
+  .photoshoot-grid > div:nth-child(6) {
     grid-column: 1 / 3;
   }
 }
